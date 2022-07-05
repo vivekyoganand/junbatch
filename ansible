@@ -1,0 +1,38 @@
+Master
+================<ROOT>
+    1  hostname
+    2  yum install ansible -y
+    3  sudo amazon-linux-extras install ansible2 -y
+    4  useradd ansible
+    5  passwd ansible
+    6  vi /etc/ssh/sshd_config 
+    7  systemctl start sshd
+    8  visudo 
+    9  history 
+    
+Worker
+================<ROOT>
+ 1  useradd ansible
+    2  passwd ansible
+    3  vi /etc/ssh/sshd_config
+    4  systemctl start sshd
+    5  visudo 
+    6  history 
+
+Master
+================<ansible>
+ssh-copy-id ansible@172.31.35.227
+
+Worker
+==============
+ip addr show
+$ 172.31.35.227
+
+
+   18  ansible -m command -a "uptime" PROD
+   19  ansible -m command -a "uptime" NONPROD
+   20  ansible -m command -a "uptime" all
+   21  ansible -m user -a "name=vivek" PROD
+   22  ansible -m user -a "name=vivek" PROD -b
+
+
