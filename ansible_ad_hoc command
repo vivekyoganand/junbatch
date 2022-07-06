@@ -1,0 +1,42 @@
+ 1  ip addr show
+    2  ssh-copy-id ansible@172.31.40.123
+    3  sudo vi /etc/ansible/hosts
+    4  ansible -m ping all
+    5  ansible -m ping PROD
+    6  ansible -m command -a "lscpu" PROD
+    7  sudo vi /etc/ansible/hosts
+    8  ansible webserver -m command -a "lscpu" 
+    9  ansible webserver -m yum -a "name=java state=latest"
+   10  ansible webserver -m yum -a "name=java state=latest" -b
+   11  ansible webserver -m yum -a "name=photoshop state=latest" -b
+   12  ansible webserver -m yum -a "name=vim state=latest" -b
+   13  ansible webserver -m yum -a "name=httpd state=latest" -b
+   14  sudo vi /etc/ansible/hosts
+   15  ansible multi -m command -a uptime
+   16  ansible multi -m shell -a uptime
+   17  ansible multi -a uptime
+   18  ansible multi -a ls -l
+   19  ansible multi -a "ls -l"
+   20  ansible multi -a "cat /etc/passwd"
+   21  ansible multi -a "name=easy"
+   22  ansible multi -m user -a "name=easy"
+   23  ansible multi -m user -a "name=easy" -b
+   24  ansible multi -m shell -a "cat /proc/meminfo|head -2"
+   25  ansible multi -m shell -a "cat /etc/passwd|grep -i vagrant"  --ask-sudo-pass
+   26  ansible multi -m shell -a "cat /etc/passwd|grep -i vagrant"  -
+   27  ansible multi -m shell -a "cat /etc/passwd|grep -i vagrant"  
+   28  ansible multi -m shell -a "cat /etc/passwd|grep -i easy"  
+   29  ansible multi -s -m group -a "name=weblogic state=present" 
+   30  ansible multi -m group -a "name=weblogic state=present" 
+   31  ansible multi -m group -a "name=weblogic state=present"  -b
+   32  ansible multi -m group -a "name=weblogic state=remove"  -b
+   33  ansible multi -m group -a "name=weblogic state=absent"  -b
+   34  ansible multi -a "df -h"
+   35  man df
+   36  ansible multi  -m service -a "name=httpd state=status"
+   37  sudo systemctl status httpd
+   38  sudo systemctl start httpd
+   39  sudo systemctl status httpd
+   40  ansible multi  -m service -a "name=httpd state=stop"
+   41  ansible multi  -m service -a "name=httpd state=stopped" -b
+   42  history
