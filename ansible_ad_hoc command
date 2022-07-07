@@ -40,3 +40,17 @@
    40  ansible multi  -m service -a "name=httpd state=stop"
    41  ansible multi  -m service -a "name=httpd state=stopped" -b
    42  history
+
+=============================
+  1  cat /etc/ansible/hosts | tail -n 4
+    2  cat /etc/ansible/hosts | tail -n 5
+    3  sudo vi /etc/ansible/hosts
+    4  cat /etc/ansible/hosts | tail -n 4
+    5  ansible webserver -m ping 
+    6  ansible vivek -m ping 
+    7  ansible-doc -l | wc -l
+    8  ansible-doc -l | grep -i "aws"
+    9  ansible-doc -l | grep -i "azure"
+   10  ansible-doc -l | grep -i "load"
+   11  ansible-doc -l | grep -i "docker"
+   12  history 
