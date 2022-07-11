@@ -1,0 +1,52 @@
+ansible-doc yum 
+   50  mkdir playbook
+   51  cd playbook/
+   52  vi java.yaml
+   53  ansible-playbook java.yaml --syntax-check
+   54  vi java.yaml
+   55  ansible-playbook java.yaml --syntax-check
+   56  vi java.yaml
+   57  ansible-playbook java.yaml --syntax-check
+   58  vi java.yaml
+   59  ansible-playbook java.yaml --syntax-check
+   60  cat java.yaml 
+   61  vi java.yaml
+   62  ansible-playbook java.yaml --syntax-check
+   63  cat java.yaml 
+   64  ansible-playbook java.yaml 
+   65  ansible-playbook java.yaml -b
+   66  ansible-doc copy
+   67  vi copyvivek.yaml
+   68  ansible-doc yum 
+   69  vi copyvivek.yaml 
+   70  ansible-playbook copyvivek.yaml -b
+   71  mkdir -p /srv/myfiles/
+   72  sudo mkdir -p /srv/myfiles/
+   73  sudo touch /srv/myfiles/foo.conf
+   74  ansible-playbook copyvivek.yaml -b
+   75  useradd foo
+   76  sudo useradd foo
+   77  ansible-playbook copyvivek.yaml -b
+   78  ansible-playbook copyvivek.yaml -b -vvv
+   79  ansible-doc fetch
+   80  vi fetch.yaml
+   81  ansible-playbook fetch.yaml -b
+   82  touch /home/ansible/somefile
+   83  ansible-playbook fetch.yaml -b
+   84  cd /tmp
+   85  ls -l
+   86  cd fetched/
+   87  ls
+   88  cd 172.31.46.5
+   89  ls -l
+   90  cd home/
+   91  ls
+   92  cd ansible/
+   93  ls
+   94  cd
+   95  ls -l
+   96  cd playbook/
+   97  ls -l
+   98  cat copyvivek.yaml
+   99  cat fetch.yaml 
+  100  history 
