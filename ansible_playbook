@@ -1,0 +1,69 @@
+ 110  cd YML
+  111  ls -l
+  112  ls 
+  113  #Day to Day task you can manage
+  114  cat create_user.yml
+  115  tail -n 4 /etc/ansible/hosts
+  116  tail -n 5 /etc/ansible/hosts
+  117  vi create_user
+  118  vi create_user.yml 
+  119  ansible-playbook create_user.yml -b
+  120  vi create_user.yml 
+  121  ansible-playbook create_user.yml -b
+  122  ls 
+  123  cat replace.yml
+  124  cat replace_hello.yml
+  125  vi replace_hello.yml 
+  126  ansible-playbook replace_hello.yml --syntax-check 
+  127  ansible-playbook replace_hello.yml -b
+  128  touch /tmp/hello/replace/intext_hello.txt
+  129  mkdir -p /tmp/hello/replace
+  130  touch /tmp/hello/replace/intext_hello.txt
+  131  vi /tmp/hello/replace/intext_hello.txt
+  132  ansible-playbook replace_hello.yml -b
+  133  cat /tmp/hello/replace/intext_hello.txt
+  134  #PHP
+  135  #JAVA
+  136  #OS LEVEL
+  137  #Security 
+  138  #Audit to fetch the logs
+  139  ls
+  140  cat blockwithout.yaml
+  141  vi blockwithout.yaml
+  142  ansible-playbook blockwithout.yaml -b
+  143  ansible-playbook blockwithout.yaml -b -vvv
+  144  ls
+  145  cat command_part1.yml
+  146  vi command_part1.yml 
+  147  ls -l /tmp
+  148  ansible-playbook command_part1.yml 
+  149  ls -l /tmp
+  150  vi command_part1.yml 
+  151  ansible-playbook command_part1.yml 
+  152  ls
+  153  cat handleransible.yaml
+  154  ansible-playbook command_part1.yml -vvv
+  155  vi command_part1.yml 
+  156  ansible-playbook command_part1.yml 
+  157  vi command_part1.yml 
+  158  ansible-playbook command_part1.yml 
+  159  vi command_part1.yml 
+  160  ansible-playbook command_part1.yml 
+  161  cat command_part1.yml -
+  162  ansible-playbook command_part1.yml -vvv
+  163  ls -l
+  164  ls
+  165  cat myservice.yml
+  166  cat command.yml
+  167  ls 
+  168  cat handleransible.yaml
+  169  vi cat handleransible.yaml
+  170  vi  handleransible.yaml
+  171  yum install httpd -y
+  172  sudo yum install httpd -y
+  173  ps -ef | grep -i http
+  174  service stop httpd
+  175  ps -ef | grep -i http
+  176  systemctl stop httpd
+  177  systemctl httpd stop
+  178  history 
